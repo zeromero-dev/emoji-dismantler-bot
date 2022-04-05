@@ -11,10 +11,12 @@ bot.on('message', (msg) => {
     
     console.log(msg.text)
     console.log([...msg.text])
-    const splitted = [...msg.text]
-   console.log(splitted.filter(item => item !== "‍")) 
+    const splitted = [...msg.text].filter(item => item !== "‍")
+    bot.sendMessage('hello')
+    console.log(splitted.join(' '))
    
 })
+
 
 //take the emoji 
 //return the dismantled emoji
